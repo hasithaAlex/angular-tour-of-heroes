@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from './Hero'
 
 @Component({
   selector: 'app-toh-pt1',
@@ -8,6 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class TohPt1Component implements OnInit {
 
   constructor() { }
+
+  hero: Hero = {
+    id: 1,
+    name: 'Windstom'
+  }
+
 
   ngOnInit() {
   }
