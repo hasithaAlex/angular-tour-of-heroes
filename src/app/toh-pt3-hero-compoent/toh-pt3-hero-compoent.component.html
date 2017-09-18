@@ -1,0 +1,12 @@
+<p>
+  toh-pt3-hero-compoent works!
+</p>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes" 
+    (click)="onSelect(hero)" 
+    [class.selected]="hero === selectedHero">
+    <span class="badge">{{hero.id}}</span> {{hero.name}} 
+  </li>
+</ul>
+
+<app-toh-pt3-hero-detail-compoent [hero]="selectedHero"></app-toh-pt3-hero-detail-compoent>
